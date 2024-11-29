@@ -1,0 +1,71 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+h1 {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+}
+
+#timer {
+    font-size: 1.5em;
+    margin: 10px;
+    color: #ff5722;
+}
+
+#game-board {
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: repeat(4, 100px);
+    gap: 10px;
+    justify-content: center;
+    margin: 20px auto;
+    width: 450px;
+}
+
+/* 卡牌底色為粉紅色 */
+.card {
+    width: 100px;
+    height: 100px;
+    background-color: #ff69b4; /* 粉紅色 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    color: white;
+    cursor: pointer;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* 當卡牌翻開後，底色改為粉藍色 */
+.card.flipped {
+    background-color: #add8e6; /* 粉藍色 */
+}
+
+/* 按鈕樣式 */
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#game-status {
+    font-size: 1.5em;
+    margin-top: 20px;
+    color: red;
+}
